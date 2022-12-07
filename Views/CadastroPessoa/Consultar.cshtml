@@ -1,0 +1,38 @@
+﻿@model FiapSmartCity.Models.CadastroPessoa
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro de Pessoas - Consultar</title>
+</head>
+<body>
+    <h1>Cadastro de Pessoas - Consultar</h1>
+    <div class="form-horizontal">
+        <hr />
+
+        <div class="form-group">
+            <label><b>Nome:</b></label>
+            <div class="col-md-10">
+                <span>@Model.Nome</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label><b>Endereço:</b></label>
+            <div class="col-md-10">
+                <span>@Model.Endereco</span>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <div>
+        <a asp-controller="CadastroPessoa" asp-action="Index">Voltar</a>
+    </div>
+
+</body>
+</html>
